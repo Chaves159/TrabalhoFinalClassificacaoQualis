@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Classificação Qualis</title>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">,
+	  <link rel="stylesheet" href="css/reset.css">
 	  <link rel="stylesheet" href="css/materialize.css">
 	  <link rel="stylesheet" href="css/materialize.min.css">
 	  <link rel="stylesheet" href="css/ajuste.css">
 </head>
-<body>
+<body id="color">
+	<header>
+			<div class="container">
+				<h2 class="titulo">Classificação Qualis</h2>
+			</div>
+	</header>
+
 	 <form action="#" id="tamanhoBarra">
-    <p>
-      <label>
-        <input class="with-gap" name="group1" type="radio"  />
-        <span>conferência</span>
-      </label>
-    </p>
-    <p>
-      <label>
+		<label>
         <input class="with-gap" name="group1" type="radio"  />
         <span>Periódico</span>
       </label>
-    </p>
-
-  </form>
+      <label>
+        <input class="with-gap" name="group1" type="radio"  />
+        <span>Conferência</span>
+      </label>
+	</form>
 	<div id="tamanhoBarra">
 	  <nav>
 	    <div class="nav-wrapper">
@@ -36,10 +38,35 @@
 	    </div>
 	  </nav>
 	</div>
-	<div class="collection" id="tamanhoBarra">
+	<div class="collection" id="tamanhoColection" >
 	    <a href="#!" class="collection-item"><span class="badge">B5</span>A.A.N.A JOURN</a>
 	    <a href="#!" class="collection-item"><span class="badge">A1</span>ACM COMPUTING SURVEYS</a>
 	    <a href="#!" class="collection-item"><span class="badge">B1</span>ACM TRANSACTIONS ON DESIGN AUTOMATION OF ELECTRONIC SYSTEMS</a>
   	</div>
+  	<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text"> Instituto Federal de Educação, Ciência e Tecnologia do Ceará</h5>
+                <p class="grey-text text-lighten-4">IFCE</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
