@@ -7,6 +7,9 @@
 	  <link rel="stylesheet" href="css/materialize.css">
 	  <link rel="stylesheet" href="css/materialize.min.css">
 	  <link rel="stylesheet" href="css/ajuste.css">
+	  <link rel="script"  href="js/principal.js">
+	  <link rel="script"  href="js/materialize.js">
+	  <link rel="script"  href="js/materialize.min.js">
 </head>
 <body id="color">
 	<header>
@@ -25,23 +28,29 @@
         <span>Conferência</span>
       </label>
 	</form>
-	<div id="tamanhoBarra">
-	  <nav>
-	    <div class="nav-wrapper">
-	      <form>
-	        <div class="input-field">
-	          <input id="search" type="search" required>
-	          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-	          <i class="material-icons">close</i>
-	        </div>
-	      </form>
-	    </div>
-	  </nav>
-	</div>
-	<div class="collection" id="tamanhoColection" >
-	    <a href="#!" class="collection-item"><span class="badge">B5</span>A.A.N.A JOURN</a>
-	    <a href="#!" class="collection-item"><span class="badge">A1</span>ACM COMPUTING SURVEYS</a>
-	    <a href="#!" class="collection-item"><span class="badge">B1</span>ACM TRANSACTIONS ON DESIGN AUTOMATION OF ELECTRONIC SYSTEMS</a>
+	<form id="form-adiciona">
+		<div id= "tamanhoBarra">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="Digite o nome do Periódico/Conferência" class="campo">
+            <button id="adicionar-paciente" class="botao bto-principal">Buscar</button>
+		</div>
+	</form>
+
+  	<div id="tamanhoBarra">
+	  	<table >
+	  		<thead>
+	  			<tr>
+	  				<th>Evento</th>
+	  				<th>Qualis</th>
+	  			</tr>
+	  		</thead>
+	  		<tbody id="tabelaQualis">
+	  			<tr >
+	  				<td id="evento"></td>
+	  				<td id="qualis"></td>
+	  			</tr>
+	  		</tbody>
+	  	</table>
   	</div>
   	<footer class="page-footer">
           <div class="container">
